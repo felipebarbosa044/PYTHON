@@ -1,0 +1,7 @@
+frase = input('Digite uma frase: ')
+a = frase.count('a')
+a1 = frase.find('a')
+aul = frase.find('a',-1)
+print(f'Nessa frase contém {a} letras "A"')
+print(f'A letra "a" aparece pela 1 vez na posição {a1 + 1}')
+print(f'A letra "a"  aparece pela ultima vez na posição {aul + 1}')

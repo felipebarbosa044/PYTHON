@@ -1,0 +1,5 @@
+nome = input('Digite o seu nome completo: ').title()
+nomex = nome.split()
+quant = len(nomex)
+print(f'O seu primeiro nome é {nomex[0]}')
+print(f'O seu ultimo nome é {nomex[-1]}')
