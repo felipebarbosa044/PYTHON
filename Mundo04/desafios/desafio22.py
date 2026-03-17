@@ -95,5 +95,4 @@ class ControleRemoto:
         self.ligar()
 
 
-
 tv = ControleRemoto()

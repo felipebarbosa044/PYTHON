@@ -32,7 +32,7 @@ j1.add_favoritos("Uncharted")
 j1.add_favoritos("Minecraft")
 j1.ficha()
 
-j2 = Gamer("Glivia Souza","peach_raivosa")
+j2 = Gamer("Olivia Souza","peach_raivosa")
 j2.add_favoritos("Mario Bros")
 j2.add_favoritos("Call of Duty")
 j2.ficha()

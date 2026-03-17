@@ -9,7 +9,7 @@ class Livro:
         self.titulo = titulo
         self.paginas = paginas
         self.pagina_Atual = 1
-        print(f":open_book: [blue]Você acabou de abrir o livro '[red]{self.titulo}[/]' que tem [green]{self.paginas} páginas no total. Você agora está na [yellow]{self.pagina_Atual}[/]")
+        print(f":open_book: [blue]Você acabou de abrir o livro '[red]{self.titulo}[/]' que tem [green]{self.paginas} páginas[/] no total. Você agora está na [yellow]página {self.pagina_Atual}[/]")
 
     def avancar_paginas(self,avançar = 0):
         contador = 1
@@ -29,3 +29,4 @@ l1 = Livro("10 coisas que aprendi",20)
 l1.avancar_paginas(5)
 l1.avancar_paginas(10)
 l1.avancar_paginas(100)
+l1.avancar_paginas(5)
