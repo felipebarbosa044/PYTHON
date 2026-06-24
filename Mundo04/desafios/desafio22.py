@@ -31,7 +31,7 @@ class ControleRemoto:
 
 
     def ligar(self):
-        os.system("cls")
+        os.system("cls") #Comando que apaga o console
 
         volume = " ".join(self.volumes)
         canal = " ".join(self.canais)
