@@ -1,2 +1,2 @@
 # CURSOEMVIDEO
-Python c guanabara
+<h1 style="color: blue">Curso de Python pelo Curso em Vídeo</h1>
