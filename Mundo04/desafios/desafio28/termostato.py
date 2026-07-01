@@ -1,6 +1,14 @@
 from rich import print
 
 class Termostato:
+    """
+        Classe que simula um termostato.
+
+        Permite configurar temperaturas entre 16°C e 30°C,
+        aceitando apenas valores inteiros ou múltiplos de 0.5.
+        Disponibiliza a temperatura tanto em formato numérico
+        quanto formatada como texto.
+    """
     def __init__(self):
         self.__temperatura = 24
 

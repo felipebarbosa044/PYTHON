@@ -5,7 +5,6 @@ from rich import inspect , print
 def main():
     a = Aluno("Felipe", 2006, "pdj")
     try:
-
         a.nascimento = 2010
         # a.adicionar_curso("moda")
         # a.curso = "moda"

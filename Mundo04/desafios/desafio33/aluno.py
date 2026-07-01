@@ -5,6 +5,17 @@ from rich import print
 ano = date.today().year
 
 class Pessoa(ABC):
+    """
+       Classe abstrata que representa uma pessoa.
+
+       Armazena o nome e o ano de nascimento de uma pessoa,
+       disponibilizando a idade como uma propriedade calculada
+       automaticamente a partir do ano atual.
+
+       Atributos:
+           nascimento (int): Ano de nascimento da pessoa.
+           idade (int): Idade calculada a partir do ano de nascimento.
+    """
     def __init__(self,nome,nascimento):
         self._nome = nome
         self._nascimento = nascimento
@@ -31,6 +42,19 @@ class Pessoa(ABC):
 
 
 class Aluno(Pessoa):
+    """
+      Representa um aluno.
+
+      Herda os atributos de Pessoa e adiciona o conceito de curso.
+      Apenas cursos cadastrados na lista de cursos oficiais podem ser
+      atribuídos ao aluno.
+
+      Atributos:
+          curso (str): Curso em que o aluno está matriculado.
+
+      Atributos de classe:
+          cursos_oficiais (list[str]): Lista de cursos permitidos.
+    """
     cursos_oficiais = ["DDS","PDJ","CEV"]
     def __init__(self,nome = "Aluno",nascimento = "2000",curso = None):
         super().__init__(nome,nascimento)

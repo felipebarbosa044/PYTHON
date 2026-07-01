@@ -2,6 +2,25 @@ import hashlib
 from rich import print
 
 class ContaBancaria:
+    """
+       Representa uma conta bancária protegida por senha.
+
+       A senha é armazenada de forma segura utilizando o algoritmo
+       criptográfico SHA-256. A classe permite realizar operações
+       como depósito, saque e alteração do nome do titular, exigindo
+       autenticação quando necessário.
+
+       Atributos:
+           nome (str): Nome do titular da conta.
+
+       Métodos:
+           sacar(valor, senha=None): Realiza um saque caso a senha seja válida
+               e haja saldo suficiente.
+           depositar(valor): Adiciona um valor ao saldo da conta.
+           validar_senha(senha): Verifica se a senha informada corresponde
+               à senha cadastrada.
+           pede_senha(): Solicita ao usuário a senha da conta.
+    """
     def __init__(self,id,titular,saldo,senha = None):
         self._id = id
         self._titular = titular.title()

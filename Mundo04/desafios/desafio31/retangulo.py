@@ -1,4 +1,16 @@
 class Retangulo:
+    """
+        Representa um retângulo.
+
+        Permite definir a base e a altura, calcular sua área
+        automaticamente e obter ou atualizar as medidas do retângulo.
+
+        Atributos:
+            base (float): Comprimento da base do retângulo.
+            altura (float): Comprimento da altura do retângulo.
+            area (float): Área calculada a partir da base e da altura.
+            medidas (str | tuple): Exibe ou atualiza as medidas do retângulo.
+    """
     def __init__(self,base= None,altura = None):
         self._base = base
         self._altura = altura

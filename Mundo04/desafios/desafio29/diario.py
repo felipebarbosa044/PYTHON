@@ -2,6 +2,19 @@ from rich import print
 
 
 class Diario:
+    """
+        Representa um diário protegido por senha.
+
+        Permite escrever mensagens (segredos), lê-las apenas após
+        informar a senha correta e alterar a senha de acesso.
+
+        Atributos:
+            senha (str): Senha utilizada para acessar o diário.
+
+        Métodos:
+            escrever(mensagem): Adiciona uma nova mensagem ao diário.
+            ler(senha): Exibe todas as mensagens caso a senha esteja correta.
+    """
     def __init__(self, senha="12345678"):
         self.__segredos = []
         self.__senha = senha
