@@ -4,7 +4,7 @@ import sys
 
 print('JOGO DA FORCA'.center(99,'-'))
 
-palavras = ['santos','jesus','toalha','maconha','programaçao','chuva','moto','banana','python','mano','achocolatado','sermao','megahelp','aurora','the bug collector']
+palavras = ['santos','jesus','toalha','computador','programaçao','chuva','moto','banana','python','mano','achocolatado','sermao','aurora']
 sorteio = randint(0,len(palavras)-1)
 for p,v in enumerate(palavras):
     if p == sorteio:

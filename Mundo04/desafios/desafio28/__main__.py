@@ -3,7 +3,7 @@ from rich import inspect
 
 def main():
     t = Termostato()
-    t.temperatura = 19
+    t.temperatura = 19.7
     inspect(t,private=True)
     print(f"A temperatura atual é {t.ftemperatura}")
 

@@ -4,22 +4,6 @@ import hashlib
 from rich import print
 
 class Credencial:
-    """
-       Representa uma credencial protegida por hash criptográfico.
-
-       A senha não é armazenada em texto puro. Sempre que uma senha é
-       definida, ela é convertida para um hash utilizando o algoritmo
-       SHA-256. A validação compara o hash da senha informada com o hash
-       armazenado.
-
-       Propriedades:
-           senha (str): Define a senha da credencial armazenando apenas
-               seu hash criptográfico.
-
-       Métodos:
-           validar(senha): Verifica se a senha informada corresponde ao
-               hash armazenado.
-    """
     def __init__(self):
         self.__hash = None
 
@@ -48,6 +32,3 @@ class Credencial:
 
         except Exception as e:
             print(f"[red]ERRO AO CRIPTOGRAFAR SENHA COM HASH 256: {e} ")
-
-
-

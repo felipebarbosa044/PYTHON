@@ -1,4 +1,3 @@
-from os import remove
 from time import sleep
 tarefas = []
 opcao = remover = 1
